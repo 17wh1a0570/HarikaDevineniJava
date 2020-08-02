@@ -13,11 +13,7 @@ public class Main {
 			array.add(scan.nextInt());
 		}
 		int sumOfElements = array.stream().mapToInt(i -> i.intValue()).sum();
-		double avg = 0;
-		int b = array.size();
-		if(b > 0) {
-			avg = sumOfElements / array.size();
-		}
+		double avg = sumOfElements / number;
 		System.out.println("Average of the numbers " + avg);
 	}
 }
